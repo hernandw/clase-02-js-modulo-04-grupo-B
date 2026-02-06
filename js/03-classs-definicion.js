@@ -45,7 +45,18 @@ info(){
 let empleado2 = new Empleado("Arly", "Candia", "Diseñadora", 24000, 2000 )
 let empleado3 = new Empleado("Claudia", "Cofré", "Desarrolladora", 30000, 1998 )
 
-console.log(empleado3.info())
+const empleados = []
+
+empleados.push(empleado2)
+empleados.push(empleado3)
 //console.log(empleado3)
 
+//console.log(empleados)
+
+let todosApellidos = empleados.map( (empleado)=>{
+    return empleado.apellido
+})
+
 //
+
+console.log(todosApellidos)
